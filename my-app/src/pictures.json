@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "name": 'Luigi',
-        "photo": 'https://images-na.ssl-images-amazon.com/images/I/61avy6Uy3qL._SX466_.jpg'
+        "name": "Luigi",
+        "photo": "https://images-na.ssl-images-amazon.com/images/I/61avy6Uy3qL._SX466_.jpg",
+        "beenClicked": false
     }
 ]

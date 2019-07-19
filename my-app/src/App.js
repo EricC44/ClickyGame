@@ -19,7 +19,7 @@ class App extends Component {
        <Header score={this.state.score} high={this.state.high}>Mario and Friends Clicky Game</Header>
        {/* {this.state.cards.map(card => (
          <Card
-          onclick={this.onclick}
+          clicky={this.onclick}
           id={this.id}
           photo={this.photo}
           />

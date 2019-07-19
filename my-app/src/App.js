@@ -8,7 +8,7 @@ import Wrapper from './Components/Wrapper';
 class App extends Component {
   //This is our initial state of the pictures
   state = {
-    pics,
+    // pics,
     score: 0,
     high: 0
   }
@@ -17,13 +17,13 @@ class App extends Component {
    return (
      <Wrapper>
        <Header score={this.state.score} high={this.state.high}>Mario and Friends Clicky Game</Header>
-       {this.state.cards.map(card => (
+       {/* {this.state.cards.map(card => (
          <Card
           onclick={this.onclick}
           id={this.id}
           photo={this.photo}
           />
-       ))}
+       ))} */}
      </Wrapper>
    )
  }

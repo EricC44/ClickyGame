@@ -12,18 +12,31 @@ class App extends Component {
     score: 0,
     high: 0
   }
+  clicky = id => {
+    // This is to find the card that is being clicked
+    this.state.cards.find((j, i) => {
+      if (j.id === id) {
+        if (cards[i].beenClicked === false) {
+          cards[i].beenClicked = true
+          this.setState({score : this.state.score + 1}, function(){
+            console.log(this.state.score)
+          })
+        }
+      }
+    })
+  }
 
  render() {
    return (
      <Wrapper>
        <Header score={this.state.score} high={this.state.high}>Mario and Friends Clicky Game</Header>
-       {/* {this.state.cards.map(card => (
+       {this.state.cards.map(card => (
          <Card
           clicky={this.onclick}
           id={this.id}
           photo={this.photo}
           />
-       ))} */}
+       ))}
      </Wrapper>
    )
  }

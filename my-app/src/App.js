@@ -8,14 +8,14 @@ import Wrapper from './Components/Wrapper';
 class App extends Component {
   //This is our initial state of the pictures
   state = {
-    cards,
+    pictures,
     score: 0,
     high: 0
   }
   clicky = id => {
     // This is to find the card that is being clicked
-    this.state.cards.find((j, i) => {
-      if (j.id === id) {
+    this.state.pictures.find((o, i) => {
+      if (o.id === id) {
         //If the card clicked is set to false, set it to true and add a point to the score
         if (pictures[i].beenClicked === false) {
           pictures[i].beenClicked = true
@@ -28,7 +28,9 @@ class App extends Component {
         } else {
           this.endGame()
         }
+        
       }
+      return true
     })
   }
   // This is our game over function
@@ -40,7 +42,7 @@ class App extends Component {
         })
       }
       // Making sure to set all of our cards back to false
-      this.state.cards.forEach(card => {
+      this.state.pictures.forEach(card => {
         card.beenClicked = false
       })
       alert(`I'm sorry, you have already picked that! Game Over! Score: ${this.state.score}`)
@@ -54,11 +56,12 @@ class App extends Component {
    return (
      <Wrapper>
        <Header score={this.state.score} high={this.state.high}>Mario and Friends Clicky Game</Header>
-       {this.state.pictures.map(card => (
+       {this.state.pictures.map(i => (
          <Card
-          clicky={this.onclick}
+          clicky={this.clicky}
           id={this.id}
           photo={this.photo}
+          key={this.id}
           />
        ))}
      </Wrapper>

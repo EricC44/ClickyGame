@@ -8,7 +8,7 @@ import Wrapper from './Components/Wrapper';
 class App extends Component {
   //This is our initial state of the pictures
   state = {
-    // pics,
+    cards,
     score: 0,
     high: 0
   }
@@ -32,6 +32,22 @@ class App extends Component {
     })
   }
   // This is our game over function
+    endGame = () => {
+      // If the score at the end of the game is higher than the highscore, it will put the current score into the highscore
+      if (this.state.score > this.state.high) {
+        this.setState({high: this.state.score}, function() {
+          console.log(this.state.high)
+        })
+      }
+      // Making sure to set all of our cards back to false
+      this.state.cards.forEach(card => {
+        card.beenClicked = false
+      })
+      alert(`I'm sorry, you have already picked that! Game Over! Score: ${this.state.score}`)
+      this.setState({score: 0})
+      return true
+        
+    }
     
 
  render() {

@@ -1,13 +1,15 @@
 import React from 'react'
 import './style.css'
 // This function is to call the card to be able to be clicked on
-const Card = props => {
+function Card (props) {
+  return (
   // This is where the props get clicked on it will do something
-  <div className='card' onClick={() => props.clicky(props.id)}>
-    <div className='img-container'>
-      <img src={props.photo} alt={props.name} />
+    <div className='card' onClick={() => props.clicky(props.id)}>
+      <div className='img-container'>
+        <img src={props.photo} alt={props.name} />
+      </div>
     </div>
-  </div>
+  )
 }
 
 export default Card

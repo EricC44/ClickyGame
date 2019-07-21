@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import pictures from './pictures.json';
-import Card from './Components/Card';
+import Cards from './Components/Card';
 import Header from './Components/Header';
 import Wrapper from './Components/Wrapper'; 
 
@@ -12,13 +12,13 @@ class App extends Component {
     score: 0,
     high: 0
   }
-  clicky = id => {
+  clicky = (id) => {
     // This is to find the card that is being clicked
-    this.state.pictures.find((o, i) => {
-      if (o.id === id) {
+    this.state.pictures.find((obj, pic) => {
+      if (obj.id === id) {
         //If the card clicked is set to false, set it to true and add a point to the score
-        if (pictures[i].beenClicked === false) {
-          pictures[i].beenClicked = true
+        if (pictures[pic].beenClicked === false) {
+          pictures[pic].beenClicked = true
           this.setState({score : this.state.score + 1}, function(){
             console.log(this.state.score)
           })
@@ -30,7 +30,7 @@ class App extends Component {
         }
         
       }
-      return true
+      // return true
     })
   }
   // This is our game over function
@@ -47,21 +47,22 @@ class App extends Component {
       })
       alert(`I'm sorry, you have already picked that! Game Over! Score: ${this.state.score}`)
       this.setState({score: 0})
-      return true
+      // return true
         
     }
     
 
- render() {
+ render = () => {
    return (
      <Wrapper>
        <Header score={this.state.score} high={this.state.high}>Mario and Friends Clicky Game</Header>
-       {this.state.pictures.map(i => (
-         <Card
+       {this.state.pictures.map(pic => (
+         <Cards
+          key={pic.id}
           clicky={this.clicky}
-          id={this.id}
-          photo={this.photo}
-          key={this.id}
+          id={pic.id}
+          photo={pic.photo}
+          
           />
        ))}
      </Wrapper>

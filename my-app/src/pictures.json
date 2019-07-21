@@ -2,7 +2,73 @@
     {
         "id": 1,
         "name": "Luigi",
-        "photo": "https://images-na.ssl-images-amazon.com/images/I/61avy6Uy3qL._SX466_.jpg",
+        "photo": "https://www.ssbwiki.com/images/thumb/6/67/Luigi_SSBB.jpg/250px-Luigi_SSBB.jpg",
+        "beenClicked": false
+    },
+    {
+        "id": 2,
+        "name": "Wario",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Wario.png/250px-Wario.png",
+        "beenClicked": false
+    },
+    {
+        "id": 3,
+        "name": "Peach",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Peach_%28Super_Mario_3D_World%29.png/220px-Peach_%28Super_Mario_3D_World%29.png",
+        "beenClicked": false
+    },
+    {
+        "id": 4,
+        "name": "Rosalina",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/RosalinaMP10.png/220px-RosalinaMP10.png",
+        "beenClicked": false
+    },
+    {
+        "id": 5,
+        "name": "Mario",
+        "photo": "https://mario.nintendo.com/assets/img/home/intro/mario-pose2.png",
+        "beenClicked": false
+    },
+    {
+        "id": 6,
+        "name": "Yoshi",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/YoshiMarioParty10.png/220px-YoshiMarioParty10.png",
+        "beenClicked": false
+    },
+    {
+        "id": 7,
+        "name": "Bowser",
+        "photo": "https://www.mariowiki.com/images/thumb/7/75/Bowser_SM64DS.png/220px-Bowser_SM64DS.png",
+        "beenClicked": false
+    },
+    {
+        "id": 8,
+        "name": "Daisy",
+        "photo": "https://www.mariowiki.com/images/thumb/3/35/Daisy_SSBUltimate.png/220px-Daisy_SSBUltimate.png",
+        "beenClicked": false
+    },
+    {
+        "id": 9,
+        "name": "Hammer Bro",
+        "photo": "https://www.mariowiki.com/images/thumb/4/4a/Hammer_Bro.png/200px-Hammer_Bro.png",
+        "beenClicked": false
+    },
+    {
+        "id": 10,
+        "name": "Waluigi",
+        "photo": "https://vignette.wikia.nocookie.net/video-games-parody/images/4/46/Waluigi.png/revision/latest?cb=20190628184257",
+        "beenClicked": false
+    },
+    {
+        "id": 11,
+        "name": "Coin Block",
+        "photo": "https://www.seekpng.com/png/small/154-1548067_mario-block-png-clip-art-black-and-white.png",
+        "beenClicked": false
+    },
+    {
+        "id": 12,
+        "name": "Star",
+        "photo": "https://www.mariowiki.com/images/d/d6/Captain_toad_powerstar.png",
         "beenClicked": false
     }
 ]

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Luigi",
-        "photo": "https://www.ssbwiki.com/images/thumb/6/67/Luigi_SSBB.jpg/250px-Luigi_SSBB.jpg",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Luigi_vacuum.jpg/200px-Luigi_vacuum.jpg",
         "beenClicked": false
     },
     {
@@ -61,14 +61,14 @@
     },
     {
         "id": 11,
-        "name": "Coin Block",
-        "photo": "https://www.seekpng.com/png/small/154-1548067_mario-block-png-clip-art-black-and-white.png",
+        "name": "Boo",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/BooNSMBWarticle.png/220px-BooNSMBWarticle.png",
         "beenClicked": false
     },
     {
         "id": 12,
         "name": "Star",
-        "photo": "https://www.mariowiki.com/images/d/d6/Captain_toad_powerstar.png",
+        "photo": "https://www.mariowiki.com/images/thumb/8/8a/New_Super_Mario_Bros._U_Deluxe_Super_Star.png/200px-New_Super_Mario_Bros._U_Deluxe_Super_Star.png",
         "beenClicked": false
     }
 ]

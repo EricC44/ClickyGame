@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    background-color: #fc2f21;
+    margin-bottom: 15px;
+    
+}
+.nameGame {
+    text-align: center;
+    font-size: 36px;
+    border-radius: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.score {
+ float: right;
+ margin-bottom: 5px;
+ color: white;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ font-size: 22px;
+ 
+}
+.howTo {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
